@@ -15,7 +15,9 @@ questionResponse = "top"
 def onMenu():
     print("DISPLAY:\ta - change volume or brightness")
     print("\t\tb - change channel or turn off\n")
-    response = raw_input("COMMAND:\t")
+    response = ""
+    while not (response == "a" or response == "b"):
+        response = raw_input("COMMAND:\t")
     if response == "a":
         return "volOrBri"
     else:
@@ -25,7 +27,9 @@ def onMenu():
 def volumeOrBrightnessMenu():
     print("DISPLAY:\ta - change volume")
     print("\t\tb - change brightness\n")
-    response = raw_input("COMMAND:\t")
+    response = ""
+    while not (response == "a" or response == "b"):
+        response = raw_input("COMMAND:\t")
     if response == "a":
         return "vol1"
     else:
@@ -36,7 +40,9 @@ def channelOrPowerMenu():
     global power
     print("DISPLAY:\ta - change channel")
     print("\t\tb - turn tv off\n")
-    response = raw_input("COMMAND:\t")
+    response = ""
+    while not (response == "a" or response == "b"):
+        response = raw_input("COMMAND:\t")
     if response == "a":
         return "cha1"
     else:
@@ -48,7 +54,9 @@ def volumeChange1():
     global volume
     print("DISPLAY:\ta - increase volume by 1")
     print("\t\tb - decrease volume or return to main menu\n")
-    response = raw_input("COMMAND:\t")
+    response = ""
+    while not (response == "a" or response == "b"):
+        response = raw_input("COMMAND:\t")
     if response == "a":
         if volume < 40:
             volume +=1
@@ -67,7 +75,9 @@ def brightnessChange1():
     global brightness
     print("DISPLAY:\ta - increase brightness by 1")
     print("\t\tb - decrease brightness or return to main menu\n")
-    response = raw_input("COMMAND:\t")
+    response = ""
+    while not (response == "a" or response == "b"):
+        response = raw_input("COMMAND:\t")
     if response == "a":
         if brightness < 100:
             brightness +=1
@@ -86,7 +96,9 @@ def channelChange1():
     global channel
     print("DISPLAY:\ta - increase channel by 1")
     print("\t\tb - decrease channel or return to main menu\n")
-    response = raw_input("COMMAND:\t")
+    response = ""
+    while not (response == "a" or response == "b"):
+        response = raw_input("COMMAND:\t")
     if response == "a":
         if channel < 5:
             channel +=1
@@ -105,7 +117,9 @@ def volumeChange2():
     global volume
     print("DISPLAY:\ta - decrease volume by 1")
     print("\t\tb - return to main menu\n")
-    response = raw_input("COMMAND:\t")
+    response = ""
+    while not (response == "a" or response == "b"):
+        response = raw_input("COMMAND:\t")
     if response == "a":
         if volume > 0:
             volume -=1
@@ -124,7 +138,9 @@ def brightnessChange2():
     global brightness
     print("DISPLAY:\ta - decrease brightness by 1")
     print("\t\tb - return to main menu\n")
-    response = raw_input("COMMAND:\t")
+    response = ""
+    while not (response == "a" or response == "b"):
+        response = raw_input("COMMAND:\t")
     if response == "a":
         if brightness > 0:
             brightness -=1
@@ -143,7 +159,9 @@ def channelChange2():
     global channel
     print("DISPLAY:\ta - decrease channel by 1")
     print("\t\tb - return to main menu\n")
-    response = raw_input("COMMAND:\t")
+    response = ""
+    while not (response == "a" or response == "b"):
+        response = raw_input("COMMAND:\t")
     if response == "a":
         if channel > 1:
             channel -=1
@@ -213,6 +231,7 @@ while(1):
 
     if questionResponse == "main":
         questionResponse = "top"
+        print("ACTION:\t\tgo to main menu")
         continue
 
     print questionResponse

@@ -1,0 +1,9 @@
+1. Modulation
+I used modulation by separating the program into components used by the main program, with each component being a function corresponding to a menu offered to the user. The reason for doing this is to make it easier to find what happens at each menu, and what is altered depending on the users decision. While not necessary in a program this small, it made it easier for me to quickly determine what was being done at each stage, and get closer to finishing the program.
+
+2. Consistency
+I used consistency in the layout of the program, increasing readability as each component is similar to read compared to all other components, and it is simple to learn where to look to find the right information by investigating one module, and applying the learnt format to all others.
+I also used consistency in the repetition of the function structure, making it easier to follow the progress of the program as it advances through the menus and the options offered to the user become more specific.
+
+3. Validation
+I have tried to use while loops to validate the users input to some extent, only proceeding when the input is one of the two valid keys. Validation and error checking is much more important in larger projects, but this program may otherwise produce unexpected results if the inout is not checked.

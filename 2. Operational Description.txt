@@ -1,0 +1,6 @@
+My remote works using the buttons 'a' and 'b' on the keyboard, corresponding to the options that are displayed by the program.
+
+The user must first turn the tv on before they are able to use any of the other functions. The display then shows the current volume, brightness, and channel, and the user’s options in the main (root) menu.
+The menu is forked, with each division making the user’s options more specific, until they are able to increase the volume/brightness/channel, decrease the volume/brightness/channel, return to the main menu (which again displays the tv’s current state), or turn the tv off.
+
+As the user goes deeper into the menus, the while loop of the program gets further through the current iteration, until an action is taken (such as increasing brightness or returning to the main menu), the while loop restarts, and the state of the tv is printed. If the action is to turn the tv off, the display once again shows turning the tv on as the only option (as when eh program was first started). Unless the user has asked to go back to the main menu, the program should display the same menu they were on at the end of the previous loop.
